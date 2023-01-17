@@ -42,7 +42,6 @@ export default function AddBookModal(props: IAddBookModalProps) {
       event.preventDefault()
       setValidated(true)
       setShowModal(false)
-      let date = new Date()
       let book: IBook = {
         id: nanoid(),
         title: titleRef!.current!.value,
